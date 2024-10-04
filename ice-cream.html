@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Creams</title>
+    <link rel="stylesheet" href="food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .food{
+            background: linear-gradient(rgba(12,11,9,0.7),rgba(12,11,9,0.7)), url('/ice-cream-img/03.jpg');
+            background-size: fixed;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <section class="food">
+        <header>
+            <h1>Ice Creams</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">veg</a></li>
+                    <li><a href="non-veg.html">Non-veg</a></li>
+                    <li><a href="ice-cream.html">Ice-cream</a></li>
+                    <li><a href="milkshake.html">Milkshakes</a></li>
+                    <li><a href="juice.html">Juices</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button  class="btn-cart">Cart
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+         <!-- Cart section -->
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="veg-img/chana-masala.webp" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Fried Chicken</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.130</div>
+                                <div class="cart-amt">Rs.130</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+                    
+                    <div class="cart-box">
+                        <img src="veg-img/chilli-paneer.webp" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">chilli-paneer Chicken</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.260</div>
+                                <div class="cart-amt">Rs.260</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+
+            </div>
+            
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="/ice-cream-img/black-current.webp" class="food-img">
+                <h2 class="food-title">Black Currant</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/blue-barry.webp" class="food-img">
+                <h2 class="food-title">Blue Berry</h2>
+                <h3 class="food-price">Rs.300.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/butter scoth.webp" class="food-img">
+                <h2 class="food-title">Butter Scotch</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/cherry vanila.webp" class="food-img">
+                <h2 class="food-title">Cherry Vanilla</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/chocolate.webp" class="food-img">
+                <h2 class="food-title">chocolate</h2>
+                <h3 class="food-price">Rs.320.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="/ice-cream-img/chocolate chip.webp" class="food-img">
+                <h2 class="food-title">chocolate chip</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/coffee.webp" class="food-img">
+                <h2 class="food-title">coffee</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/pista.webp" class="food-img">
+                <h2 class="food-title">pista</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/crunch kulfa.webp" class="food-img">
+                <h2 class="food-title">crunch kulfa</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/vanilla.webp" class="food-img">
+                <h2 class="food-title">Vanilla</h2>
+                <h3 class="food-price">Rs.200.00</h3>
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/cotton candy.webp" class="food-img">
+                <h2 class="food-title">cotton candy</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/mango.webp" class="food-img">
+                <h2 class="food-title">mango</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/tutti fruiri.webp" class="food-img">
+                <h2 class="food-title">Tutti fruiti</h2>
+                <h3 class="food-price">Rs.300</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/strawberry.webp" class="food-img">
+                <h2 class="food-title">strawberry</h2>
+                <h3 class="food-price">Rs.320</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/i.webp" class="food-img">
+                <h2 class="food-title">water melon</h2>
+                <h3 class="food-price">Rs.320</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="./ice-cream-img/penut.webp" class="food-img">
+                <h2 class="food-title">penut</h2>
+                <h3 class="food-price">Rs.320</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
